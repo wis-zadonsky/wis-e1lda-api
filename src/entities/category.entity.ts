@@ -1,6 +1,11 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  OneToMany,
+  PrimaryGeneratedColumn,
+  JoinColumn,
+} from 'typeorm';
 import { Restaurant } from './restaurant.entity';
-import { JoinColumn } from 'typeorm/browser';
 
 @Entity()
 export class Category {
